@@ -2,8 +2,6 @@
 
 Красивый локальный HTML-дашборд для статистики FunPay: продажи, покупки, периоды, статусы, средний чек, возвраты, популярные товары и категории.
 
-Рекомендуемое имя репозитория: `funpay-stats-dashboard`.
-
 ![Пример продаж](docs/images/sales-preview.png)
 
 ![Пример покупок](docs/images/purchases-preview.png)
@@ -34,7 +32,7 @@ python funpay_stats.py --profile 2600949 --open
 
 ## Точная статистика продаж и покупок
 
-Нужен cookie `golden_key` из авторизованного браузера FunPay:
+Нужен cookie `golden_key` из авторизованного браузера FunPay (F12 - Application - Cookies - golden_key:
 
 ```powershell
 $env:FUNPAY_GOLDEN_KEY="сюда_значение_golden_key"
