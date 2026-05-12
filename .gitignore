@@ -1,0 +1,21 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+cookies.txt
+golden_key.txt
+
+# Generated dashboards can contain private order stats, usernames, and item names.
+funpay_stats*.html
+*_stats*.html
+prew*.jpg
+prew*.png
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local scratch files
+.server_pid
