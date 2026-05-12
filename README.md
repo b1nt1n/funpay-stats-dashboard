@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ## Быстрый запуск без входа
 
 ```powershell
-python funpay_stats.py --profile 2600949 --open
+python funpay_stats.py --profile ВашАйди --open
 ```
 
 Этот режим берет только публичные данные профиля: офферы, рейтинг и отзывы. Скрипт догружает дополнительные страницы отзывов через публичный endpoint. Покупки, уникальные покупатели/продавцы, возвраты и точные периоды FunPay публично не показывает.
@@ -35,8 +35,8 @@ python funpay_stats.py --profile 2600949 --open
 Нужен cookie `golden_key` из авторизованного браузера FunPay (F12 - Application - Cookies - golden_key:
 
 ```powershell
-$env:FUNPAY_GOLDEN_KEY="сюда_значение_golden_key"
-python funpay_stats.py --profile 2600949 --period year --open
+$env:FUNPAY_GOLDEN_KEY="ваш_golden_key"
+python funpay_stats.py --profile ВашАйди --period year --open
 ```
 
 Можно использовать `.env.example` как шаблон для локального `.env`, но сам `.env` не публикуй.
@@ -46,7 +46,7 @@ python funpay_stats.py --profile 2600949 --period year --open
 Можно также передать cookie напрямую, но для публичного или чужого компьютера так лучше не делать:
 
 ```powershell
-python funpay_stats.py --profile 2600949 --golden-key "сюда_значение_golden_key" --open
+python funpay_stats.py --profile ВашАйди --golden-key "ваш_golden_key" --open
 ```
 
 HTML сохранится в `funpay_stats.html`. Внутри страницы можно переключать `Продажи / Покупки` и периоды без повторного запуска.
